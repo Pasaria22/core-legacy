@@ -4,6 +4,8 @@ import com.example.demo.dto.in.ShoeFilter;
 import com.example.demo.dto.in.ShoeFilter.Color;
 import com.example.demo.dto.out.Shoe;
 import com.example.demo.dto.out.Shoes;
+import com.example.demo.dto.out.updated.Stock;
+
 import java.math.BigInteger;
 import java.util.List;
 
@@ -19,5 +21,10 @@ public class ShoeCoreLegacy extends AbstractShoeCore {
                                    .size(BigInteger.ONE)
                                    .build()))
                 .build();
+  }
+
+  @Override
+  public Stock findAllStock() {
+    return null;
   }
 }
